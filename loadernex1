@@ -91,7 +91,7 @@ end
 
 -- Game configurations
 local Games = {
-    [9237571875] = "https://raw.githubusercontent.com/zawerex/NexusScript/main/main.lua", -- Your main script URL
+    [6676099788] = "https://raw.githubusercontent.com/zawerex/NexusScript/main/main.lua", -- Your main script URL
 }
 
 local gameId = game.GameId
