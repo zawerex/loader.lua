@@ -41,10 +41,11 @@ _G.PrivateKeys = {
     ["xCeeJWIGnEkvbEFYPXpkTKCAzkFrdkxk"] = true,
     ["YaGBDUImpYaHwdXtiCXJjxrnxMBuYgeu"] = true,
     ["OBeoposJzetpwsgjEIuufgFdiXRZiQJL"] = true,
+    ["TestKeyNexus1234567890ABCDEFGHIJK"] = true, -- Тестовый ключ
 }
 
 -- Key verification
-local script_key = "PUT YOUR KEY HERE"
+local script_key = "TestKeyNexus1234567890ABCDEFGHIJK" -- Тестовый ключ для проверки
 
 if not _G.PrivateKeys[script_key] then
     warn("Invalid key. Please check your key.")
