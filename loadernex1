@@ -81,7 +81,7 @@ if not _G.AllowedExecutors[_G.Executor] and not _G.SemiAllowedExecutors[_G.Execu
 end
 
 local Games = {
-    [9237571875] = "", 
+    [9237571875] = "https://raw.githubusercontent.com/zawerex/Conexion1fsafsdfds/refs/heads/main/343242323523", 
 }
 
 local gameId = game.GameId
