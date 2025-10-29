@@ -15,7 +15,7 @@ _G.AllowedExecutors = {
     ["Volcano"] = true,
     ["Seliware"] = true,
     ["Zenith"] = true,
-    ["Sirhurt"] = true,
+    ["Xeno"] = true,
     ["RonixExploit"] = true,
     ["Delta"] = true,
     ["Codex"] = true,
@@ -28,7 +28,6 @@ _G.AllowedExecutors = {
 }
 
 _G.SemiAllowedExecutors = {
-    ["Xeno"] = true,
     ["Velocity"] = true,
     ["Solara"] = true,
 }
