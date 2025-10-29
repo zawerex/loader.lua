@@ -40,8 +40,16 @@ _G.PrivateKeys = {
     ["aIolnVjgLexwfODDAdZbhTicaUCDuhfD"] = true,
     ["xCeeJWIGnEkvbEFYPXpkTKCAzkFrdkxk"] = true,
     ["YaGBDUImpYaHwdXtiCXJjxrnxMBuYgeu"] = true,
-    ["OBeoposJzetpwsgjEIuufgFdiXRZiQJL"] = true, --month 10/15
+    ["OBeoposJzetpwsgjEIuufgFdiXRZiQJL"] = true,
 }
+
+-- Key verification
+local script_key = "PUT YOUR KEY HERE"
+
+if not _G.PrivateKeys[script_key] then
+    warn("Invalid key. Please check your key.")
+    return
+end
 
 local now = os.time()
 
@@ -76,12 +84,13 @@ else
 end
 
 if not _G.AllowedExecutors[_G.Executor] and not _G.SemiAllowedExecutors[_G.Executor] then
-    print("executor not allowed:", _G.Executor)
+    print("Executor not allowed:", _G.Executor)
     return
 end
 
+-- Game configurations
 local Games = {
-    [9237571875] = "https://raw.githubusercontent.com/zawerex/Conexion1fsafsdfds/refs/heads/main/343242323523", 
+    [9237571875] = "https://raw.githubusercontent.com/zawerex/NexusScript/main/main.lua", -- Your main script URL
 }
 
 local gameId = game.GameId
@@ -90,5 +99,5 @@ local URL = Games[gameId]
 if URL then
     loadstring(game:HttpGet(URL))()
 else
-    warn("no scripts configured for this game.")
+    warn("No scripts configured for this game.")
 end
